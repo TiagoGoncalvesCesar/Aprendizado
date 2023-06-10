@@ -1,0 +1,49 @@
+package curso;
+
+
+import java.util.Scanner;
+import java.util.Locale;
+public class Problema_aumento {
+
+	
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double salario;
+		double novoSalario;
+		double aumento;
+		double porcentagem;
+        
+		System.out.println("Digite o salário da pessoa:");
+		salario = sc.nextDouble();
+		
+		aumento = salario * 0.15;
+		novoSalario = salario + aumento;
+		System.out.printf("Novo salario = %.2f%n ",novoSalario);
+		
+		System.out.printf("Aumento = %.2f%n ",aumento);
+		
+		if (salario <= 1000) {
+			porcentagem = salario * 0.2;
+			novoSalario = salario + porcentagem;
+			
+		}
+		else if (salario <= 3000.0) {
+		      novoSalario = salario * 0.15;
+		      porcentagem = 15;
+		}
+		else (salario < 8000.0) {
+			novoSalario = salario * 0.10;
+			porcentagem = 10;
+		}
+		else if(salario > 8000.0) {
+			novoSalario = salario * 0.05;
+			porcentagem = 5;		
+		}
+		System.out.printf("Porcentagem =",porcentagem,"%");
+	}
+
+}

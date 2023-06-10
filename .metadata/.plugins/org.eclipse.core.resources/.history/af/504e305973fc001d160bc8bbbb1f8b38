@@ -1,0 +1,56 @@
+package Desafio_Imposto;
+
+import java.text.DecimalFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double salarioMensal ;
+		double imposto;
+		double rendaAnualSalario;
+		double prestaçãoServiço;
+		double ganhoCapital;
+		double gastosEducacionais;
+		double impostoSalario;
+		double impostoServiços;
+		double impostoGanhoCapital ;
+		
+		
+	       	
+	    
+		System.out.print("Renda anual com salário:");
+		rendaAnualSalario = sc.nextDouble();
+		System.out.print("Renda anual com prestação de serviço:");
+		prestaçãoServiço = sc.nextDouble();
+		System.out.print("Renda anual com ganho de capital:");
+		ganhoCapital = sc.nextDouble();
+		
+		salarioMensal = rendaAnualSalario / 12;
+	    if (salarioMensal <= 3000) {
+	    	imposto = 0;
+	    }
+	    else if (salarioMensal > 3000 && salarioMensal <= 5000) {
+	    	    imposto = salarioMensal * 0.10;
+	    }
+	    else if (salarioMensal > 5000) {
+	    	imposto = salarioMensal * 0.20;
+	    }
+		System.out.println("RELATÓRIO DE IMPOSTO DE RENDA:");
+		
+		System.out.println("Consolidado de Renda:");
+		impostoSalario = rendaAnualSalario * 0.10 ;
+		impostoServiços = prestaçãoServiço * 0.15;
+		impostoGanhoCapital = ganhoCapital * 0.2;
+		System.out.printf("Imposto sobre salário:%.2f%n", impostoSalario);
+		System.out.printf("Imposto sobre serviço:%.2f%n", impostoServiços);
+		System.out.printf("Imposto sobre ganho de capital:%.2f%n", impostoGanhoCapital);
+	}
+}
+
+	

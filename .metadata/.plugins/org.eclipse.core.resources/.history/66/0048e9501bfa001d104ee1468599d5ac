@@ -1,0 +1,10 @@
+import java.util.Locale;
+
+public class Desafio_Imposto {
+
+	public static void main(String[] args) {
+		Locale.setDefault(System.US);
+
+	}
+
+}

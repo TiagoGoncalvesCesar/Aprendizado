@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+C:\temp\Curso_aprendizado\.metadata\.plugins\org.eclipse.jdt.core
+1146882023.index
+1360249668.index
+3942004128.index
+2125413531.index
+1865797976.index
+3265859109.index
+2636102413.index
+3424780940.index
+3806395143.index
+162406301.index
+1505499822.index
